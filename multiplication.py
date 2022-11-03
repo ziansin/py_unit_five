@@ -5,7 +5,7 @@ def multiplication_table(number):
             test += str(x) + " "
         return(test)
     elif number == 0:
-        for x in range(13):
+        for x in range(12):
             test += str(0) + " "
         return(test)
     """

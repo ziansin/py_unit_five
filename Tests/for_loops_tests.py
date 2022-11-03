@@ -13,6 +13,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_multiplication_tables(self):
         self.assertEqual("6 12 18 24 30 36 42 48 54 60 66 72 ", multiplication_table(6))
+        self.assertEqual("0 0 0 0 0 0 0 0 0 0 0 0 ", multiplication_table(0))
+        self.assertEqual("-1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 ", multiplication_table(-1))
         # Create two additional tests underneath this line
 
 """
