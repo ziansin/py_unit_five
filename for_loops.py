@@ -1,9 +1,16 @@
 
 def count(first, last):
     test = ""
-    for x in range(first, last):
-        test += str(x) + " "
-    return(test)
+    if last > first:
+        for x in range(first, last + 1):
+            test += str(x) + " "
+        return(test)
+    elif last < first:
+        for x in range(first, last - 1, -1):
+            test += str(x) + " "
+        return(test)
+    elif last == first:
+        return str(first) + " "
     """
     This function will create a string of numbers separated by a space. The numbers will start with the
     first number and end with the second. The second number SHOULD be included as part of the string. If
@@ -16,6 +23,8 @@ def count(first, last):
 
 def main():
     print(count(0, 6))
+    print(count(6, 0))
+    print(count(3, 3))
 
 
 if __name__ == '__main__':

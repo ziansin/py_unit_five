@@ -1,8 +1,13 @@
 def multiplication_table(number):
     test = ""
-    for x in range(number, number * 13, number):
-        test += str(x) + " "
-    return(test)
+    if number != 0:
+        for x in range(number, number * 13, number):
+            test += str(x) + " "
+        return(test)
+    elif number == 0:
+        for x in range(13):
+            test += str(0) + " "
+        return(test)
     """
     Ex. multiplication_table(6) returns "6 12 18 24 30 36 42 48 54 60 66 72 "
     :param number: An integer
@@ -10,7 +15,7 @@ def multiplication_table(number):
     """
 
 def main():
-        print(multiplication_table(6))
+        print(multiplication_table(-5))
 
 if __name__ == '__main__':
         main()
