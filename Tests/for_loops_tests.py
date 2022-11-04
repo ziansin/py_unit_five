@@ -17,16 +17,17 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("-1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 ", multiplication_table(-1))
         # Create two additional tests underneath this line
 
-"""
+
     def test_fibonacci(self):
         self.assertEqual("1 1 2 3 5 ", fibonacci(5))
         self.assertEqual("1 ", fibonacci(1))
         self.assertEqual("1 1 ", fibonacci(2))
-        # Create two additional tests underneath this line
+        self.assertEqual("1 1 2 3 5 8 ", fibonacci(6))
+        self.assertEqual("1 1 2 3 5 8 13 21 34 ", fibonacci(9))
 
     def test_multiples(self):
         self.assertEqual(233168, get_sum(1000))
-"""
+
 
 if __name__ == '__main__':
     unittest.main()
