@@ -12,8 +12,7 @@ def get_sum(number):
     """
 
 def main():
-    print(get_sum(1000))
-
+    print(get_sum(10))
 
 main()
 
