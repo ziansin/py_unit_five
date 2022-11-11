@@ -26,6 +26,9 @@ def sequence(number):
 
 def main():
     num = int(input("Enter a number: "))
-    print("There were", sequence(num), "steps")
+    if num == 2:
+        print("There was 1 step")
+    else:
+        print("There were", sequence(num), "steps")
 
 main()
