@@ -1,5 +1,5 @@
 #Zain Pilcher
-#11/9/22
+#11/30/22
 #Program for guessing number game
 
 import random
@@ -88,13 +88,13 @@ def main():
                 print("You lose")
                 print("The number was", number)
             elif guess_three == number:
-                print("You win!!")
+                print("You win")
                 print("The number was", number)
         elif guess_two == number:
-            print("You win!!")
+            print("You win")
             print("The number was", number)
     elif guess == number:
-        print("You win!!")
+        print("You win")
         print("The number was", number)
 
 main()
