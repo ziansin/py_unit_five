@@ -29,7 +29,6 @@ def main():
     """
     Compares the user's answer to the computer generated answer
     If the answer is too high or too low, the function will say so
-    The user has three tries to guess the number otherwise they lose
     """
     number = get_number()
     guess = get_guess()
