@@ -18,10 +18,15 @@ def get_guess():
     :return: The user's guess between 1 and 100
     '''
     while True:
-        guess = int(input("Guess a number between 1 and 100: "))
-        if guess <= 100 and guess >= 1:
-            return guess
-            break
+        try:
+            guess = int(input("Guess a number between 1 and 100: "))
+        except ValueError:
+            print("Not an integer")
+            continue
+        else:
+            if guess <= 100 and guess >= 1:
+                return guess
+                break
     """
     Gets the user input if it is between 1 and 100. If it does not fill the requirements, then the user is prompted to answer again. 
     """
